@@ -1,0 +1,52 @@
+/* *********** Template ************* */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #b08ead;
+  --basic-color: #fff;
+  --basic-invert-color: #000;
+  --web-color: #4b3049;
+}
+
+/* body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: var(--basic-invert-color);
+  text-decoration: none;
+}
+
+img {
+  width: 100% !important;
+  height: 100% !important;
+  vertical-align: middle;
+} */
+
+/* *********** Template ************* */
+
+/* *********** reused css ************* */
+/* *********** reused css ************* */
+
+/* *********** Header css ************* */
+/* header */
+/* *********** Header css ************* */
+
+/* *********** Footer css ************* */
+/* footer */
+/* *********** Footer css ************* */
+
+/* *********** Home css ************* */
+/* .home_page  */
+/* *********** Home css ************* */
