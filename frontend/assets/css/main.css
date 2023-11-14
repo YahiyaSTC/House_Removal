@@ -12,9 +12,10 @@
   --web-color: #4b3049;
 }
 
-/* body {
+body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
+  background-color: #d9d9d9;
 }
 
 ul {
@@ -32,7 +33,10 @@ img {
   width: 100% !important;
   height: 100% !important;
   vertical-align: middle;
-} */
+}
+main{
+  background-color: #fff;
+}
 
 /* *********** Template ************* */
 
@@ -48,5 +52,5 @@ img {
 /* *********** Footer css ************* */
 
 /* *********** Home css ************* */
-/* .home_page  */
+
 /* *********** Home css ************* */
