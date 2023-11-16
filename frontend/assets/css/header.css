@@ -27,6 +27,7 @@ header .detailsContact a {
 .navbar {
   position: sticky;
   top: 0;
+  z-index: 100;
   border-radius: 15px;
   width: 100%;
   padding: 0;
