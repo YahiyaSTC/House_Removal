@@ -1,12 +1,12 @@
 .services_page .service_sec .box {
   width: 100%;
-  background-image: url("../Images/service1.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 1;
   color: #fff;
   padding: 50px 30px;
+  margin-bottom: 50px;
 }
 .services_page .service_sec .box::before {
   content: "";
@@ -24,23 +24,30 @@
   );
 }
 
+.services_page .service_sec .box.box1 {
+  background-image: url("../Images/service1.png");
+}
 
-.services_page .service_sec .box h3{
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 30px;
+.services_page .service_sec .box.box2 {
+  background-image: url("../Images/service2.png");
 }
-.services_page .service_sec .box p{
-    width: 50%;
-    font-size: 16px;
-    text-align: justify;
+
+.services_page .service_sec .box h3 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
-.services_page .service_sec .box a{
-    display: block;
-    background-color: #10B3D8;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 50px;
-    margin-top: 40px;
-    width: fit-content;
+.services_page .service_sec .box p {
+  width: 55%;
+  font-size: 16px;
+  text-align: justify;
+}
+.services_page .service_sec .box a {
+  display: block;
+  background-color: #10b3d8;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 50px;
+  margin-top: 40px;
+  width: fit-content;
 }
