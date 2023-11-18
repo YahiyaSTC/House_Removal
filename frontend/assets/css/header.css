@@ -27,6 +27,7 @@ header .detailsContact a {
 .navbar {
   position: sticky;
   top: 0;
+  z-index: 100;
   border-radius: 15px;
   width: 100%;
   padding: 0;
@@ -36,8 +37,9 @@ header .detailsContact a {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  width: 90%;
+  width: 84%;
   height: 70px;
+  border-radius: 10px;
 }
 .navbar .nav_right {
   background: rgb(9, 9, 121);
@@ -47,7 +49,8 @@ header .detailsContact a {
     rgba(18, 198, 235, 1) 0%,
     rgba(2, 0, 36, 1) 100%
     );
-  width: 10%;
+    width: 15%;
+    border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;

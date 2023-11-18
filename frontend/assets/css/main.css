@@ -29,11 +29,11 @@ a {
   text-decoration: none;
 }
 
-img {
+/* img {
   width: 100% !important;
   height: 100% !important;
   vertical-align: middle;
-}
+} */
 main{
   background-color: #fff;
 }
@@ -52,5 +52,4 @@ main{
 /* *********** Footer css ************* */
 
 /* *********** Home css ************* */
-
 /* *********** Home css ************* */
