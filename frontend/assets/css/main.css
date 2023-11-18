@@ -1,3 +1,5 @@
+@import url("./header.css");
+
 /* *********** Template ************* */
 * {
   margin: 0;
@@ -46,8 +48,59 @@ section{
   padding: 50px 0;
 }
 
+p{
+  margin: 0;
+}
+
 /* *********** Template ************* */
 
+/* *********** Banner ************* */
+
+.innerBanner{
+  min-height: 300px;
+  background: url("../Images/aboutBanner.jpg") no-repeat;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.innerBanner ul{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.innerBanner ul li {
+  font-size: 17px;
+  color: #fff;
+}
+
+.innerBanner ul li a{
+  color: #073f63;
+  font-weight: bold;
+}
+.innerBanner h2{
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  animation: 2.4s leftToright forwards;
+}
+.innerBanner h2 .cursor {
+  visibility: hidden !important;
+}
+
+@keyframes leftToright {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
+/* *********** Banner ************* */
 /* *********** reused css ************* */
 /* *********** reused css ************* */
 

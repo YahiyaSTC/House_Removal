@@ -76,7 +76,12 @@ header .detailsContact a {
 }
 .navbar ul li {
   list-style-type: none;
+  border-bottom: 4px solid transparent;
 }
+.navbar ul li.active {
+  border-bottom: 4px solid #073f63;
+}
+
 .navbar ul li a {
   color: #073f63;
   text-decoration: none;
