@@ -83,8 +83,9 @@ p{
   font-size: 40px;
   animation: 2.4s leftToright forwards;
 }
-.innerBanner h2 .cursor {
-  visibility: hidden !important;
+.innerBanner p {
+  color: #fff;
+  animation: 5s leftToright forwards;
 }
 
 @keyframes leftToright {
