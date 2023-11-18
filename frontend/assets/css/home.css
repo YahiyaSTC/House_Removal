@@ -71,14 +71,15 @@
 /* *********** Quote ************* */
 
 .quote{
-    margin: auto;
     margin-top: 20px;
+}
+.quote .container{
     border: 2px solid transparent;
     border-top-color: blue;
-    width: 95%;
-}
-.quote > div:nth-child(1){    
-    display: flex;   
+    background-color: #fff;
+    box-shadow: 0 1px 8px 1px rgba(0, 0, 0, .05);
+    border-radius: 3px;
+    display: flex;
 }
 .quoteNote{
     padding: 20px;
@@ -91,7 +92,59 @@
     padding: 20px;
     width: 70%;
 }
-.quoteForm form input{
+
+.quoteForm form {
+    display: flex;
+    justify-content: space-between;
+}
+.quoteForm form .group-form {
+    width: 30%;
+}
+.quoteForm form .group-form .first,.quoteForm form .group-form .second {
+    margin: 10px 0;
+}
+.quoteForm form .group-form .first {
+    margin-top: 0 !important;
+}
+
+
+.quoteForm form .group-form .first label{
+    margin-bottom: 10px ;
+}
+.quoteForm form .group-form .second label{
+    margin: 10px 0 ;
+}
+.quoteForm form .group-form label{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.quoteForm form .group-form input{
+    padding: 10px 5px;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+.quoteForm form .group-form input:focus{
+    outline: none;
+    border: 1px solid blue;
+}
+
+.quoteForm form .group-form button{
+    width: 100%;
+    font-family: 'Kreon', serif;
+    color: white;
+    text-align: end;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url("https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63b7fd84e4a16197ede760ff_DBM%20Button.svg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
+/* .quoteForm form input{
     padding: 5px;
 } 
 .quoteForm form input:focus{
@@ -101,9 +154,9 @@
 .quoteForm form{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px; 
+    justify-content: space-between;
 
+    gap: 15px;
 }
 .quoteForm .btn{
     height: 30px; 
@@ -118,4 +171,4 @@
     background-image: url("https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63b7fd84e4a16197ede760ff_DBM%20Button.svg");
     background-repeat: no-repeat;
     background-size: cover;    
-}
+} */
