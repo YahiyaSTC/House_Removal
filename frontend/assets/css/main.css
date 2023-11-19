@@ -88,11 +88,11 @@ p{
   color: #fff;
   font-weight: bold;
   font-size: 40px;
-  animation: 2.4s leftToright forwards;
+  animation: 1s leftToright forwards;
 }
 .innerBanner p {
   color: #fff;
-  animation: 5s leftToright forwards;
+  animation: 3s leftToright forwards;
 }
 
 @keyframes leftToright {
