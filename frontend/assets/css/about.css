@@ -1,0 +1,101 @@
+.about_page .about_content h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.about_page .about_content h3 span {
+  color: #23a9e1;
+}
+.about_page .about_content img {
+  height: auto;
+  box-shadow: 0px 0px 50px #00000026;
+}
+.about_page .about_content p {
+  font-size: 20px;
+  text-align: justify;
+}
+.about_page .Specialties {
+  background-color: #000;
+  color: #fff;
+}
+.about_page .Specialties .head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about_page .Specialties .head h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.about_page .Specialties .col-md-6 {
+  margin-top: 20px;
+}
+.about_page .Specialties .box {
+  border: 1px solid #23a9e1;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.about_page .Specialties .box p {
+  font-weight: bold;
+  font-size: 18px;
+}
+.about_page .Specialties .box .imgg {
+  width: 40%;
+  transition: 0.3s all;
+}
+.about_page .Specialties .box:hover {
+  border-color: #fff;
+}
+
+.about_page .Specialties .box:hover .imgg {
+  transition: 0.3s all;
+}
+
+.about_page .Specialties .box .imgg.img1 {
+  background: url("../Images/icons.png") center -3px no-repeat;
+}
+.about_page .Specialties .box:hover .imgg.img1 {
+  background: url("../Images/icons.png") center -110px no-repeat;
+  transition: 0.3s all;
+}
+
+.about_page .Specialties .box .imgg.img2 {
+  background: url("../Images/icons.png") -2px -200px no-repeat;
+}
+.about_page .Specialties .box:hover .imgg.img2 {
+  background: url("../Images/icons.png") -2px -300px no-repeat;
+  transition: 0.3s all;
+}
+
+.about_page .Specialties .box .imgg.img3 {
+  background: url("../Images/icons.png") -2px -380px no-repeat;
+}
+.about_page .Specialties .box:hover .imgg.img3 {
+  background: url("../Images/icons.png") -2px -480px no-repeat;
+  transition: 0.3s all;
+}
+
+.about_page .Specialties .box .imgg.img4 {
+  background: url("../Images/icons.png") -2px -755px no-repeat;
+}
+.about_page .Specialties .box:hover .imgg.img4 {
+  background: url("../Images/icons.png") -2px -870px no-repeat;
+  transition: 0.3s all;
+}
+
+.about_page .Specialties .box .imgg.img5 {
+  background: url("../Images/icons.png") -2px -560px no-repeat;
+}
+.about_page .Specialties .box:hover .imgg.img5 {
+  background: url("../Images/icons.png") -2px -655px no-repeat;
+  transition: 0.3s all;
+}
+
+.about_page .Specialties .box .imgg.img6 {
+  width: 45%;
+  background: url("../Images/icons.png") -2px -990px no-repeat;
+}
+.about_page .Specialties .box:hover .imgg.img6 {
+  background: url("../Images/icons.png") -2px -1110px no-repeat;
+  transition: 0.3s all;
+}
