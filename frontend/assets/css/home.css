@@ -203,6 +203,9 @@
     width: 100%;
     position: relative;
     z-index: 5;
+    background-image: url("../Images/bgService.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #ourService > img {
     height: 100%;
@@ -226,53 +229,69 @@
 
 }
 
-#ourService > h2:nth-child(2){
+#ourService h2{
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
 
 }
-#ourService > h2:nth-child(3){
+#ourService h3{
     text-align: center;
     font-family: 'Kreon', serif;
     font-size: 2.25rem;
 }
-.serviceBox{
+#ourService .serviceBox{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-flow: row wrap;
-
 }
-.serviceBox > div{
-    padding: 0px 50px;
-    max-width: 400px ;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column ;
-    align-items: center;
-    justify-content: center;
+#ourService .serviceBox .box{
+    padding: 20px 50px;
     text-align: center;
-    gap: 10px;
-    padding: 20px;
+    margin: 20px 0;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
-.serviceBox > div:hover{
+#ourService .serviceBox .box::after{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
     background-color: #11BEE3;
-    transition: background-color 0.5s linear;
+    height: 100%;
+    z-index: -1;
+    transition: 0.3s all;
+}
+#ourService .serviceBox .box:hover::after{
+    bottom: 0;
+    transition: 0.3s all;
 }
 
-.serviceBox > div > h2{
+#ourService .serviceBox .box > h2{
     font-size: 1.5rem;
     font-weight: 700;
 }
-.serviceBox > div > i{
+#ourService .serviceBox .box > i{
     margin: 20px 0px;
-    color: #040E32;
+    color: #fff;
 }
-.serviceBox > div > a{
-    color: #040E32;
+#ourService .serviceBox .box > a{
+    color: #fff;
+    /* color: #040E32; */
     font-weight:600;
 }
+
+#ourService .serviceBox .box:hover i{
+    color: #040E32;
+    transition: .3s all;
+}
+#ourService .serviceBox .box:hover a{
+    color: #040E32;
+    transition: .3s all;
+ }
