@@ -1,297 +1,314 @@
 /* *********** Banner ************* */
 
-#homeBanner {
+#homeBanner .container {
   position: relative;
-  background-image: url("../Images/pic.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-color: #09587c;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+  padding: 0;
 }
-#homeBanner > div{
-    width: 100%;
-}
-#homeBanner > img:nth-child(1){   
+
+#homeBanner .container::after {
+    content: "";
     position: absolute;
-    object-fit: cover;
-    object-position: left top;
-    right: 0;
-    width: 50%; 
-    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("../Images/pic.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left;
+    z-index: -1;
+  }
+
+#homeBanner .container > img:nth-child(1) {
+  position: absolute;
+  object-fit: cover;
+  object-position: left top;
+  right: 0;
+  top: -1px;
+  width: 60%;
+  height: 100%;
+  z-index: 1;
 }
-.bannerContent > div:nth-child(1){
-    margin-top: 20px;
-    padding: 10px;
-    width: 100%; 
-    background-color: #292929;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} 
-.bannerContent > div:nth-child(1) h1{
-    font-family: 'Kreon', serif;
-    color: white;
-    margin-bottom: 20px ;
+.bannerContent > div:nth-child(1) {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #292929;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.bannerContent > div:nth-child(1) h4{
-    color: #1973ab;
-    font-size: 1rem;
+.bannerContent > div:nth-child(1) h1 {
+  font-family: "Kreon", serif;
+  color: white;
+  margin-bottom: 20px;
 }
-.bannerContent > div:nth-child(1) h2{
-    color: white;
-    font-size: 1.3rem;
+.bannerContent > div:nth-child(1) h4 {
+  color: #1973ab;
+  font-size: 1rem;
 }
-.bannerContent > div:nth-child(2) ul{
-    display: flex;
-    gap: 5px; 
-    flex-direction: column; 
-    height: 100%;
-    justify-content: center;
+.bannerContent > div:nth-child(1) h2 {
+  color: white;
+  font-size: 1.3rem;
 }
-.bannerContent > div:nth-child(2) ul li i{
-    margin: 10px; 
+.bannerContent > div:nth-child(2) ul {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  padding: 50px 0;
+  font-size: 20px;
 }
-.bannerContent > div:nth-child(2) ul li:nth-child(1){
-    margin-left: 100px; 
+.bannerContent > div:nth-child(2) ul li i {
+  margin: 10px 20px 10px 10px;
+  font-size: 20px;
 }
-.bannerContent > div:nth-child(2) ul li:nth-child(2){
-    margin-left: 80px; 
+.bannerContent > div:nth-child(2) ul li:nth-child(1) {
+  margin-left: 130px;
 }
-.bannerContent > div:nth-child(2) ul li:nth-child(3){
-    margin-left: 60px; 
+.bannerContent > div:nth-child(2) ul li:nth-child(2) {
+  margin-left: 115px;
 }
-.bannerContent > div:nth-child(2) ul li:nth-child(4){
-    margin-left: 40px; 
+.bannerContent > div:nth-child(2) ul li:nth-child(3) {
+  margin-left: 95px;
 }
-.bannerContent > div:nth-child(2) ul li:nth-child(5){
-    margin-left: 20px; 
+.bannerContent > div:nth-child(2) ul li:nth-child(4) {
+  margin-left: 80px;
+}
+.bannerContent > div:nth-child(2) ul li:nth-child(5) {
+  margin-left: 60px;
+}
+.bannerContent > div:nth-child(2) ul li:nth-child(6) {
+  margin-left: 40px;
 }
 
 /* *********** Quote ************* */
 
-.quote{
-    margin-top: 20px;
+.quote {
+  margin-top: 20px;
 }
-.quote .container{
-    border: 2px solid transparent;
-    border-top-color: blue;
-    background-color: #fff;
-    box-shadow: 0 1px 8px 1px rgba(0, 0, 0, .05);
-    border-radius: 3px;
-    display: flex;
+.quote .container {
+  border: 2px solid transparent;
+  border-top-color: blue;
+  background-color: #fff;
+  box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  display: flex;
 }
-.quoteNote{
-    padding: 20px;
-    width: 30%;
+.quoteNote {
+  padding: 20px;
+  width: 30%;
 }
-.quoteNote > h3{
-    font-family: 'Kreon', serif;
+.quoteNote > h3 {
+  font-family: "Kreon", serif;
 }
-.quoteForm{
-    padding: 20px;
-    width: 70%;
+.quoteForm {
+  padding: 20px;
+  width: 70%;
 }
 
 .quoteForm form {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .quoteForm form .group-form {
-    width: 30%;
+  width: 30%;
 }
-.quoteForm form .group-form .first,.quoteForm form .group-form .second {
-    margin: 10px 0;
+.quoteForm form .group-form .first,
+.quoteForm form .group-form .second {
+  margin: 10px 0;
 }
 .quoteForm form .group-form .first {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
-
-.quoteForm form .group-form .first label{
-    margin-bottom: 10px ;
+.quoteForm form .group-form .first label {
+  margin-bottom: 10px;
 }
-.quoteForm form .group-form .second label{
-    margin: 10px 0 ;
+.quoteForm form .group-form .second label {
+  margin: 10px 0;
 }
-.quoteForm form .group-form label{
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.quoteForm form .group-form input{
-    padding: 10px 5px;
-    width: 100%;
-    border: 1px solid #ddd;
-    font-size: 14px;
-}
-.quoteForm form .group-form input:focus{
-    outline: none;
-    border: 1px solid blue;
+.quoteForm form .group-form label {
+  font-weight: 600;
+  font-size: 14px;
 }
 
-.quoteForm form .group-form button{
-    width: 100%;
-    font-family: 'Kreon', serif;
-    color: white;
-    text-align: end;
-    display: inline-flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-image: url("https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63b7fd84e4a16197ede760ff_DBM%20Button.svg");
-    background-repeat: no-repeat;
-    background-size: cover;  
+.quoteForm form .group-form input {
+  padding: 10px 5px;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+.quoteForm form .group-form input:focus {
+  outline: none;
+  border: 1px solid blue;
+}
+
+.quoteForm form .group-form button {
+  width: 100%;
+  font-family: "Kreon", serif;
+  color: white;
+  text-align: end;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63b7fd84e4a16197ede760ff_DBM%20Button.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* *********** About Us ************* */
 
-
-#aboutUs .rowww{
-    display: flex;
-    /* padding: 40px; */
+#aboutUs .rowww {
+  display: flex;
+  /* padding: 40px; */
 }
-
-
 
 #aboutUs .rowww > div:nth-child(1) {
-    /* padding: 0px 40px; */
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  /* padding: 0px 40px; */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#aboutUs .rowww > div:nth-child(1) > h2:nth-child(1){
-    color: #074165;
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
+#aboutUs .rowww > div:nth-child(1) > h2:nth-child(1) {
+  color: #074165;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
 }
-#aboutUs .rowww > div:nth-child(1) > h2:nth-child(2){
-    padding: 20px 0px;
-    line-height: 1.6em;
-    font-weight: bold;
-    font-size: 2rem;
-    color: #182937;
-    width: 85%;
-    font-family: 'Kreon', serif;
-    font-size: 2.5rem;
+#aboutUs .rowww > div:nth-child(1) > h2:nth-child(2) {
+  padding: 20px 0px;
+  line-height: 1.6em;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #182937;
+  width: 85%;
+  font-family: "Kreon", serif;
+  font-size: 2.5rem;
 }
-#aboutUs .rowww > div:nth-child(1) > p{
-    padding-right: 15px;
-    flex-grow: 3;
-    width: 90%;
-    color: #5E5E5E;
+#aboutUs .rowww > div:nth-child(1) > p {
+  padding-right: 15px;
+  flex-grow: 3;
+  width: 90%;
+  color: #5e5e5e;
 }
 
 #aboutUs .rowww > div:nth-child(2) {
-    width: 40%;
-    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
-    padding: 40px 0px;
+  width: 40%;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 40px 0px;
 }
 
-#aboutUs .rowww > div:nth-child(2) img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-
+#aboutUs .rowww > div:nth-child(2) img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* *********** Our Service ************* */
-#ourService{
-    color: white;
-    /* border: 1px solid black; */
-    width: 100%;
-    position: relative;
-    z-index: 5;
-    background-image: url("../Images/bgService.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+#ourService {
+  color: white;
+  /* border: 1px solid black; */
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  background-image: url("../Images/bgService.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #ourService > img {
-    height: 100%;
-    width: 100vw;
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -3;
+  height: 100%;
+  width: 100vw;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
 }
-#ourService::before{
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(225deg, #09587C 17%, #182937 17%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
-    z-index: -1;
-
-}
-
-#ourService h2{
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-
-}
-#ourService h3{
-    text-align: center;
-    font-family: 'Kreon', serif;
-    font-size: 2.25rem;
-}
-#ourService .serviceBox{
-    width: 100%;
-}
-#ourService .serviceBox .box{
-    padding: 20px 50px;
-    text-align: center;
-    margin: 20px 0;
-    min-height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-#ourService .serviceBox .box::after{
-    content: "";
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    right: 0;
-    background-color: #11BEE3;
-    height: 100%;
-    z-index: -1;
-    transition: 0.3s all;
-}
-#ourService .serviceBox .box:hover::after{
-    bottom: 0;
-    transition: 0.3s all;
+#ourService::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(225deg, #09587c 17%, #182937 17%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: -1;
 }
 
-#ourService .serviceBox .box > h2{
-    font-size: 1.5rem;
-    font-weight: 700;
+#ourService h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
-#ourService .serviceBox .box > i{
-    margin: 20px 0px;
-    color: #fff;
+#ourService h3 {
+  text-align: center;
+  font-family: "Kreon", serif;
+  font-size: 2.25rem;
 }
-#ourService .serviceBox .box > a{
-    color: #fff;
-    /* color: #040E32; */
-    font-weight:600;
+#ourService .serviceBox {
+  width: 100%;
+}
+#ourService .serviceBox .box {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 20px 0;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+#ourService .serviceBox .box::after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background-color: #11bee3;
+  height: 100%;
+  z-index: -1;
+  transition: 0.3s all;
+}
+#ourService .serviceBox .box:hover::after {
+  bottom: 0;
+  transition: 0.3s all;
 }
 
-#ourService .serviceBox .box:hover i{
-    color: #040E32;
-    transition: .3s all;
+#ourService .serviceBox .box > h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
-#ourService .serviceBox .box:hover a{
-    color: #040E32;
-    transition: .3s all;
- }
+#ourService .serviceBox .box > i {
+  margin: 20px 0px;
+  color: #fff;
+}
+#ourService .serviceBox .box > a {
+  color: #fff;
+  /* color: #040E32; */
+  font-weight: 600;
+}
+
+#ourService .serviceBox .box:hover i {
+  color: #040e32;
+  transition: 0.3s all;
+}
+#ourService .serviceBox .box:hover a {
+  color: #040e32;
+  transition: 0.3s all;
+}
