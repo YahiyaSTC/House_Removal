@@ -390,6 +390,10 @@
 .chooseUs ul {
   color: #5e5e5e;
 }
+
+.chooseUs ul li{
+  margin: 10px 0;
+}
 #experienceCounter {
   width: 100%;
   display: flex;
@@ -424,3 +428,4 @@ footer {
   height: 100%;
   object-fit: cover;
 }
+

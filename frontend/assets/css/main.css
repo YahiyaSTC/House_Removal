@@ -15,10 +15,16 @@
   --web-color: #4b3049;
 }
 
+html{
+  font-size: 1vw;
+  scroll-behavior: smooth;
+}
+
 body {
   /* overflow-x: hidden; */
   font-family: "Poppins", sans-serif;
   background-color: #d9d9d9;
+  font-size: 1rem;
 }
 
 ul {
@@ -113,18 +119,9 @@ p{
   padding:  0 !important;
 }
 
-
-/* *********** Banner ************* */
-/* *********** reused css ************* */
-/* *********** reused css ************* */
-
-/* *********** Header css ************* */
-/* header */
-/* *********** Header css ************* */
-
-/* *********** Footer css ************* */
-/* footer */
-/* *********** Footer css ************* */
-
-/* *********** Home css ************* */
-/* *********** Home css ************* */
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+}

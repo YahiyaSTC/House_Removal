@@ -96,9 +96,11 @@ footer .policyTerms > div > a > i {
   color: #0fa7cc;
   padding-left: 5px;
 }
-footer .policyTerms > div > .socialMedia > i {
+footer .policyTerms > div > .socialMedia > a {
+  color: #aeaeae;
   margin: 5px;
 }
+
 footer .londonBranch {
   width: 50%;
   display: flex;
