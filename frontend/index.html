@@ -37,6 +37,9 @@
       type="image/x-icon"
     />
 
+    <!-- mmenue -->
+    <link rel="stylesheet" href="./assets/css/mmenu.css" />
+
     <!-- main CSS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
 
@@ -95,9 +98,30 @@
             <li class="active"><a href="./index.html">Home</a></li>
             <li><a href="./aboutus.html">About Us</a></li>
             <li><a href="./services.html">Services</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
+            <li class="d-none"><a href="./gallery.html">Gallery</a></li>
             <li><a href="./contact.html">Contact Us</a></li>
           </ul>
+            <div class="main_mmenu">
+            <div id="page">
+              <nav id="menu">
+                <ul>
+                  <li class="active"><a href="./index.html">Home</a></li>
+                  <li><a href="./aboutus.html">About Us</a></li>
+                  <li><a href="./services.html">Services</a></li>
+                  <li class="d-none"><a href="./gallery.html">Gallery</a></li>
+                  <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+              </nav>
+              <div class="menu_icn">
+                <a href="#menu" class="menu_icon">
+                  <img src="./assets/images/menu.png" alt="" title="menu" />
+                </a>
+              </div>
+              <!--menu_icn end here-->
+            </div>
+          <!-- </div> -->
+            <!-- page close -->
+          </div>
         </div>
         <div class="nav_right">
           <a
@@ -110,7 +134,7 @@
       </div>
     </div>
 
-    <main class="home_page">
+    <main class="home_page ">
       <div id="homeBanner">
         <div class="container">
           <img src="./assets/Images/pic.png" alt="bannerImg" />
@@ -220,23 +244,21 @@
           <div class="rowww">
             <div>
               <h2>About Us</h2>
-              <h2>
-                The Best Moving Company In The London - Fast Interior Removals
-                Ltd.
-              </h2>
+              <h2>The Best Moving Company In The London - SMK Removals Ltd.</h2>
               <p>
-                <strong>Fast Interior Removals Ltd</strong> is a vibrant young
-                <strong>relocation company</strong> that prides itself on the
-                high level of personalized service it gives. We’re
-                <strong>London based removal company</strong>, over
-                <strong>10 years experience</strong> in the removals and storage
-                industry. Fast Movers more than just a moving company, we handle
-                all aspects of relocation tailoring our service to meet your
-                individual needs. We can help facilitate every facet of your
-                move, whether you are moving locally, nationally or overseas. We
-                take care of the logistics of your move, from beginning to end.
-                Let us handle the details and take the stress out of relocating
-                for you.
+                <strong>SMK Removals Ltd</strong> stands out as a
+                <strong>dynamic and energetic moving company</strong> dedicated
+                to delivering an exceptional level of personalized service. With
+                over a decade of experience in the removals and storage sector
+                and a base in London, we take pride in our commitment to
+                providing top-notch services. Beyond being just a moving
+                company, Fast Movers takes on the comprehensive responsibility
+                of handling all aspects of your relocation, customizing our
+                services to cater to your unique requirements. Whether you're
+                moving locally, nationally, or internationally, we are
+                well-equipped to streamline every facet of your move. Entrust us
+                with the logistics of your relocation, and allow us to alleviate
+                the stress associated with moving.
               </p>
             </div>
             <div class="aboutUsPic">
@@ -260,7 +282,7 @@
                     We provide services all over the world, we have multiple
                     offices in Europe
                   </p>
-                  <a href="#"
+                  <a href="./services.html"
                     >Read More <i class="fa-solid fa-caret-right"></i
                   ></a>
                 </div>
@@ -273,7 +295,7 @@
                     We are top-rated movers in UK, provide complete removal
                     services for long distance and short distance.
                   </p>
-                  <a href="#"
+                  <a href="./services.html"
                     >Read More <i class="fa-solid fa-caret-right"></i
                   ></a>
                 </div>
@@ -286,7 +308,7 @@
                     Are you looking for storage solution check our storage
                     services, we have multiple warehouses.
                   </p>
-                  <a href="#"
+                  <a href="./services.html"
                     >Read More <i class="fa-solid fa-caret-right"></i
                   ></a>
                 </div>
@@ -299,7 +321,7 @@
                     We provide full packing and unpacking services on demand,
                     check complete details...
                   </p>
-                  <a href="#"
+                  <a href="./services.html"
                     >Read More <i class="fa-solid fa-caret-right"></i
                   ></a>
                 </div>
@@ -312,7 +334,7 @@
                     We have all size of Vans, you can demand how many men you
                     need. check complete detail.
                   </p>
-                  <a href="#"
+                  <a href="./services.html"
                     >Read More <i class="fa-solid fa-caret-right"></i
                   ></a>
                 </div>
@@ -325,7 +347,7 @@
                     We have dedicated team for cleaning services, read more
                     about our services.
                   </p>
-                  <a href="#"
+                  <a href="./services.html"
                     >Read More <i class="fa-solid fa-caret-right"></i
                   ></a>
                 </div>
@@ -349,7 +371,6 @@
             </div>
             <ul>
               <li>◉ Fully Equipped Modern Vehicles</li>
-              <li>◉ Over 10 years of experience</li>
               <li>◉ Top Quality Packing Materials</li>
               <li>◉ Professional Uniformed Staff</li>
               <li>◉ Video/Site Survey For Larger Moves</li>
@@ -375,7 +396,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="">
       <div class="map">
         <img src="./assets/Images/map.png" alt="mapPic" />
       </div>
@@ -438,15 +459,23 @@
         </form>
         <div class="policyTerms">
           <p>
-            By clicking Send, I agree to House Mover Privacy Policy and Terms
-            of Service.
+            By clicking Send, I agree to House Mover Privacy Policy and Terms of
+            Service.
           </p>
           <div>
             <div class="socialMedia">
-              <i class="fa-brands fa-facebook fa-2xl"></i>
-              <i class="fa-brands fa-facebook-messenger fa-2xl"></i>
-              <i class="fa-brands fa-whatsapp fa-2xl"></i>
-              <i class="fa-brands fa-instagram fa-2xl"></i>
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook fa-2xl"></i
+              ></a>
+              <a href="https://twitter.com/" target="_blank"
+                ><i class="fa-brands fa-square-twitter fa-lg fa-2xl"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram fa-lg fa-2xl"></i
+              ></a>
+              <a href="https://www.linkedin.com/" target="_blank"
+                ><i class="fa-brands fa-linkedin fa-lg fa-2xl"></i
+              ></a>
             </div>
             <a href="#quote"
               >Get a free quote <i class="fa-solid fa-right-long"></i
@@ -473,7 +502,9 @@
         <div class="info">
           <h4>Contact US</h4>
           <a href="tel:0318-0126925"> 0318-0126925 </a>
-          <a href="muhammadyahiya166@gmail.com"> muhammadyahiya166@gmail.com </a>
+          <a href="muhammadyahiya166@gmail.com">
+            muhammadyahiya166@gmail.com
+          </a>
         </div>
 
         <div class="nationWide">
@@ -487,18 +518,102 @@
 
       <div class="slider">
         <div class="owl-carousel owl-theme owwl">
-          <div class="item"><img src="./assets/Images/pic1.png" alt="Pics" width="100" height="100"></div>
-          <div class="item"><img src="./assets/Images/pic1.png" alt="Pics" width="100" height="100"></div>
-          <div class="item"><img src="./assets/Images/pic1.png" alt="Pics" width="100" height="100"></div>
-          <div class="item"><img src="./assets/Images/pic1.png" alt="Pics" width="100" height="100"></div>
-          <div class="item"><img src="./assets/Images/pic1.png" alt="Pics" width="100" height="100"></div>
-          <div class="item"><img src="./assets/Images/pic1.png" alt="Pics" width="100" height="100"></div>
-          <div class="item"><img src="./assets/Images/pic1.png" alt="Pics" width="100" height="100"></div>
-          <div class="item"><img src="./assets/Images/pic1.png" alt="Pics" width="100" height="100"></div>
-          <div class="item"><img src="./assets/Images/pic1.png" alt="Pics" width="100" height="100"></div>
-          <div class="item"><img src="./assets/Images/pic1.png" alt="Pics" width="100" height="100"></div>
-          <div class="item"><img src="./assets/Images/pic1.png" alt="Pics" width="100" height="100"></div>
-          <div class="item"><img src="./assets/Images/pic1.png" alt="Pics" width="100" height="100"></div>
+          <div class="item">
+            <img
+              src="./assets/Images/pic1.png"
+              alt="Pics"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/Images/pic1.png"
+              alt="Pics"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/Images/pic1.png"
+              alt="Pics"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/Images/pic1.png"
+              alt="Pics"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/Images/pic1.png"
+              alt="Pics"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/Images/pic1.png"
+              alt="Pics"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/Images/pic1.png"
+              alt="Pics"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/Images/pic1.png"
+              alt="Pics"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/Images/pic1.png"
+              alt="Pics"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/Images/pic1.png"
+              alt="Pics"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/Images/pic1.png"
+              alt="Pics"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./assets/Images/pic1.png"
+              alt="Pics"
+              width="100"
+              height="100"
+            />
+          </div>
         </div>
       </div>
 
@@ -507,11 +622,11 @@
           <li><a href="./index.html">Home</a></li>
           <li><a href="./aboutus.html">About Us</a></li>
           <li><a href="./services.html">Services</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
+          <li class="d-none"><a href="./gallery.html">Gallery</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
         <p class="copyright">
-          © Copyright 2023 House Mover. All rights reserved. Original and
+          © Copyright 2023 SMK Removals Ltd. All rights reserved. Original and
           exclusive content.
         </p>
       </div>
@@ -526,10 +641,10 @@
 
     <!-- Jquery Script -->
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <!-- Owl Carosel Script -->
     <script
@@ -538,6 +653,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- mmenu -->
+    <script src="./assets/js/mmenu.min.all.js"></script>
 
     <!-- Owl.js -->
     <script src="./assets/js/owl.js"></script>

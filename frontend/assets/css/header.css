@@ -41,6 +41,9 @@ header .detailsContact a {
   height: 70px;
   border-radius: 10px;
 }
+.nav_left .main_mmenu{
+  display: none;
+}
 .navbar .nav_right {
   background: rgb(9, 9, 121);
   background: linear-gradient(
@@ -100,4 +103,30 @@ header .container-fluid,
 .navbar .container-fluid {
   max-width: 1300px;
   align-items: initial;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  header{
+    display: none;
+  }
+
+  .navbar .nav_left{
+    width: 100%;
+  }
+
+  .navbar .nav_right{
+    display: none;
+  }
+
+  .nav_left ul{
+    display: none;
+  }
+  .nav_left .main_mmenu{
+    display: flex;
+    width: fit-content;
+    /* align-items: center;
+    margin-right: 20px; */
+  }
 }
