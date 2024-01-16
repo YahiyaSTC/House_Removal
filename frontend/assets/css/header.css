@@ -34,7 +34,8 @@ header .detailsContact a {
   margin: 10px 0;
 }
 .navbar .nav_left {
-  display: flex;
+  display: flex !important;
+  align-items: baseline;
   justify-content: space-between;
   background-color: #fff;
   width: 84%;
@@ -44,7 +45,7 @@ header .detailsContact a {
 .nav_left .main_mmenu{
   display: none;
 }
-.navbar .nav_right {
+.navbar .nav_right ,.navbar .nav_right_res {
   background: rgb(9, 9, 121);
   background: linear-gradient(
     90deg,
@@ -55,7 +56,7 @@ header .detailsContact a {
     width: 15%;
     border-radius: 10px;
   }
-  .navbar .nav_right a {
+  .navbar .nav_right a ,.navbar .nav_right_res a {
     display: block;
     color: #fff;
     width: 100%;
@@ -65,7 +66,7 @@ header .detailsContact a {
     align-items: center;
     justify-content: center;
 }
-    .navbar .nav_right a i {
+    .navbar .nav_right a i ,.navbar .nav_right_res a i {
       font-size: 30px;
     }
 .navbar #logo {
@@ -77,12 +78,13 @@ header .detailsContact a {
   width: 100%;
   object-fit: contain;
 }
-.navbar ul {
+.navbar ul  {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 0 20px;
 }
+
 .navbar ul li {
   list-style-type: none;
   border-bottom: 4px solid transparent;
@@ -105,7 +107,9 @@ header .container-fluid,
   align-items: initial;
 }
 
-
+.navbar .nav_right_res {
+  width: 100% ;
+}
 
 @media only screen and (max-width: 800px) {
   header{
@@ -120,7 +124,7 @@ header .container-fluid,
     display: none;
   }
 
-  .nav_left ul{
+  .nav_left .nav_none{
     display: none;
   }
   .nav_left .main_mmenu{
@@ -129,4 +133,21 @@ header .container-fluid,
     /* align-items: center;
     margin-right: 20px; */
   }
+}
+.navbar .offcanvas-body {
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbar .nav_resp ul{
+  flex-direction: column;
+}
+.navbar .socialMediaIcon_res {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.navbar .socialMediaIcon_res a i{
+  font-size: 20px;
 }
