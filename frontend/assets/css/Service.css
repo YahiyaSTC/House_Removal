@@ -51,3 +51,37 @@
   margin-top: 40px;
   width: fit-content;
 }
+
+
+@media only screen and (max-width: 800px) {
+  .services_page .service_sec .box {
+    background-position: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 770px) {
+
+  .services_page .service_sec .box::before{
+    background: #0009;
+  }
+
+  .services_page .service_sec .box p{
+    width: 100% !important;
+  }
+
+  .services_page .service_sec .box a{
+    font-size: 1.5rem;
+  }
+
+  .services_page .service_sec .box {
+    background-position: end;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .services_page .service_sec .box h3 {
+    font-size: 30px;
+  }
+}

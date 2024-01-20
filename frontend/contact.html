@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
 
     <!-- Home CSS -->
-    <link rel="stylesheet" href="./assets/css/Gallery.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
 
     <!-- owl slider -->
     <link
@@ -52,7 +52,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>Gallery - Home Removals</title>
+    <title>Contact Us - Home Removals</title>
   </head>
   <body>
     <header>
@@ -63,23 +63,13 @@
             <i class="fa-solid fa-phone"></i>
             <a href="tel:03180126925">0318-0126925</a>
             <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:muhammadyahiya166@gmail.com"
-              >muhammadyahiya166@gmail.com</a
-            >
+            <a href="mailto:muhammadyahiya166@gmail.com">muhammadyahiya166@gmail.com</a>
           </div>
           <div class="socialMediaIcon">
-            <a href="https://www.facebook.com/" target="_blank"
-              ><i class="fa-brands fa-facebook fa-lg"></i
-            ></a>
-            <a href="https://twitter.com/" target="_blank"
-              ><i class="fa-brands fa-square-twitter fa-lg"></i
-            ></a>
-            <a href="https://www.instagram.com/" target="_blank"
-              ><i class="fa-brands fa-instagram fa-lg"></i
-            ></a>
-            <a href="https://www.linkedin.com/" target="_blank"
-              ><i class="fa-brands fa-linkedin fa-lg"></i
-            ></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter fa-lg"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -91,13 +81,96 @@
           <div id="logo">
             <img src="./assets/Images/logo.png" alt="logo" />
           </div>
-          <ul>
+          <ul class="nav_none">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./aboutus.html">About Us</a></li>
             <li><a href="./services.html">Services</a></li>
-            <li class="active"><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
+            <li class="d-none"><a href="./gallery.html">Gallery</a></li>
+            <li class="active"><a href="./contact.html">Contact Us</a></li>
           </ul>
+          <div class="main_mmenu">
+            <div id="page">
+              <div class="menu_icn">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                  style="background-color: #fff; border: #fff"
+                >
+                  <div class="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+                </button>
+
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel"
+                >
+                  <div class="offcanvas-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div id="logo_res">
+                      <img
+                        src="./assets/Images/logo.png"
+                        style="height: 100px"
+                        alt="logo"
+                      />
+                    </div>
+                    <div class="nav_resp">
+                      <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li>
+                          <a href="./aboutus.html">About Us</a>
+                        </li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li class="d-none">
+                          <a href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="active"><a href="./contact.html">Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="socialMediaIcon_res">
+                      <a href="https://www.facebook.com/" target="_blank"
+                        ><i class="fa-brands fa-facebook fa-lg"></i
+                      ></a>
+                      <a href="https://twitter.com/" target="_blank"
+                        ><i class="fa-brands fa-square-twitter fa-lg"></i
+                      ></a>
+                      <a href="https://www.instagram.com/" target="_blank"
+                        ><i class="fa-brands fa-instagram fa-lg"></i
+                      ></a>
+                      <a href="https://www.linkedin.com/" target="_blank"
+                        ><i class="fa-brands fa-linkedin fa-lg"></i
+                      ></a>
+                    </div>
+                    <div class="nav_right_res">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=03180126925&text=Hello!"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-whatsapp"></i> 03180126925</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--menu_icn end here-->
+            </div>
+            <!-- </div> -->
+            <!-- page close -->
+          </div>
         </div>
         <div class="nav_right">
           <a
@@ -110,97 +183,21 @@
       </div>
     </div>
 
-    <main class="gallery_page">
+    <main class="services_page mb-5">
       <div class="innerBanner">
         <div class="container">
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li>/</li>
-            <li>Gallery</li>
+            <li>Contact Us</li>
           </ul>
 
-          <h2>Gallery</h2>
-          <p>Take a look at our photos.</p>
+          <h2>Contact Us</h2>
         </div>
       </div>
-
-      <section class="galley_sec">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <img
-                src="https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63d120f0770071396744c3ba_s1.png"
-                width="100%"
-                height="100%"
-                alt="gallery1"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="row my-4">
-            <div class="col-md-6">
-              <img
-                src="https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63d1215a0352b05a02ba8a53_s2.png"
-                alt="gallery2"
-                loading="lazy"
-              />
-              <img
-                src="https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63d12162770071be3844d1ba_s4.png"
-                alt="gallery3"
-                loading="lazy"
-              />
-              <img
-                src="https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63d12227661b68cce458fb5e_s6.png"
-                alt="gallery4"
-                loading="lazy"
-              />
-              <img
-                src="https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63d1223f05f315442e19a65f_s8.png"
-                alt="gallery5"
-                loading="lazy"
-              />
-              <img
-                src="https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63d122589c5e18d4beca0224_s10.png"
-                alt="gallery6"
-                loading="lazy"
-              />
-            </div>
-            <div class="col-md-6">
-              <img
-                src="https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63d1218a4b5c9a28003b6449_s3.png"
-                alt="gallery4"
-                loading="lazy"
-              />
-              <img
-                src="https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63d12195a1a2c7be0e2191fe_s5.png"
-                alt="gallery5"
-                loading="lazy"
-              />
-              <img
-                src="https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63d122589c5e18d4beca0224_s10.png"
-                alt="gallery6"
-                loading="lazy"
-              />
-              <img
-                src="https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63d122459c5e185093ca01c1_s9.png"
-                alt="gallery7"
-                loading="lazy"
-              />
-              <img
-                src="https://uploads-ssl.webflow.com/638fe270b5e20b9f30aa5a0c/63d12260acb2757b8e406d1d_s11.png"
-                alt="gallery7"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer>
-      <div class="map">
-        <img src="./assets/Images/map.png" alt="mapPic" />
-      </div>
 
       <div class="formDetail">
         <form action="#">
@@ -282,6 +279,10 @@
             ></a>
           </div>
         </div>
+      </div>
+
+      <div class="map">
+        <img src="./assets/Images/map.png" alt="mapPic" />
       </div>
 
       <div class="londonBranch">

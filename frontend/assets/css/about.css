@@ -10,7 +10,7 @@
   box-shadow: 0px 0px 50px #00000026;
 }
 .about_page .about_content p {
-  font-size: 20px;
+  font-size: 14px;
   text-align: justify;
 }
 .about_page .Specialties {
@@ -93,9 +93,69 @@
 
 .about_page .Specialties .box .imgg.img6 {
   width: 45%;
-  background: url("../Images/icons.png") -2px -990px no-repeat;
+  background: url("../Images/icons.png") -2px -1070px no-repeat;
 }
 .about_page .Specialties .box:hover .imgg.img6 {
-  background: url("../Images/icons.png") -2px -1110px no-repeat;
+  background: url("../Images/icons.png") -2px -1070px no-repeat;
   transition: 0.3s all;
+}
+
+
+
+@media only screen and (max-width: 380px){
+  .about_page .Specialties .box .imgg{
+    width: 35%;
+    height: 100px;
+  }
+  .about_page .Specialties .box p{
+    width: 65%;
+  }
+
+  .about_page .Specialties .box .imgg.img1 {
+    background: url("../Images/icons.png") 5px -85px no-repeat !important;
+  }
+  .about_page .Specialties .box:hover .imgg.img1 {
+    background: url("../Images/icons.png") 5px -85px no-repeat !important;
+  }
+
+  .about_page .Specialties .box .imgg.img2 {
+    background: url("../Images/icons.png") 5px -270px no-repeat;
+  }
+  .about_page .Specialties .box:hover .imgg.img2 {
+    background: url("../Images/icons.png") 5px -270px no-repeat;
+  }
+  
+  
+  .about_page .Specialties .box .imgg.img3 {
+    background: url("../Images/icons.png") 5px -460px no-repeat
+  }
+  .about_page .Specialties .box:hover .imgg.img3 {
+    background: url("../Images/icons.png") 5px -460px no-repeat;
+  }
+  
+  .about_page .Specialties .box .imgg.img4 {
+    background: url("../Images/icons.png") 5px -855px no-repeat;
+  }
+  .about_page .Specialties .box:hover .imgg.img4 {
+    background: url("../Images/icons.png") 5px -855px no-repeat;
+    transition: 0.3s all;
+  }
+  
+  .about_page .Specialties .box .imgg.img5 {
+    background: url("../Images/icons.png") 5px -635px no-repeat;
+  }
+  .about_page .Specialties .box:hover .imgg.img5 {
+    background: url("../Images/icons.png") 5px -635px no-repeat;
+    transition: 0.3s all;
+  }
+  
+  .about_page .Specialties .box .imgg.img6 {
+    width: 45%;
+    background: url("../Images/icons.png") 5px -1070px no-repeat;
+  }
+  .about_page .Specialties .box:hover .imgg.img6 {
+    background: url("../Images/icons.png") 5px -1110px no-repeat;
+    transition: 0.3s all;
+  }
+  
 }
