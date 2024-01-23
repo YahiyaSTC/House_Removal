@@ -203,7 +203,7 @@
       </div>
 
       <div class="formDetail">
-        <form action="#">
+        <form action="http://localhost:5000/contact" method="post" enctype="application/x-www-form-urlencoded">
           <div>
             <h4>Contact us</h4>
             <p>
@@ -211,52 +211,28 @@
               we're always happy to provide you with a free quote.
             </p>
           </div>
-
+  
           <label for="first_name">
             <h5>First Name</h5>
-            <input
-              type="text"
-              id="first_name"
-              name="firstName"
-              placeholder="First Name"
-            />
+            <input type="text" id="first_name" name="firstName" placeholder="First Name" required />
           </label>
           <label for="last_name">
             <h5>Last Name</h5>
-            <input
-              type="text"
-              id="last_name"
-              name="last_name"
-              placeholder="First Name"
-            />
+            <input type="text" id="last_name" name="last_name" placeholder="First Name" required />
           </label>
           <label for="phone_number">
             <h5>Phone</h5>
-            <input
-              type="text"
-              id="phone_number"
-              name="phone_number"
-              placeholder="First Name"
-            />
+            <input type="text" id="phone_number" name="phone_number" placeholder="First Name" maxlength="14" required />
           </label>
           <label for="your_email">
             <h5>Your Email</h5>
-            <input
-              type="text"
-              id="your_email"
-              name="your_email"
-              placeholder="First Name"
-            />
+            <input type="text" id="your_email" name="your_email" placeholder="First Name" required />
           </label>
           <label for="your_message">
             <h5>Your Message</h5>
-            <textarea
-              id="your_message"
-              name="your_message"
-              placeholder="Your Message Goes Here"
-            ></textarea>
+            <textarea id="your_message" name="your_message" placeholder="Your Message Goes Here"></textarea>
           </label>
-          <button class="btn" type="button">Let's Continue</button>
+          <button class="btn" type="submit">Let's Continue</button>
         </form>
         <div class="policyTerms">
           <p>
