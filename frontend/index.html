@@ -176,11 +176,12 @@
           </p>
         </div>
         <div class="quoteForm">
-          <form action="#">
+          
+          <form  action="http://localhost:5000/quote" method="post" enctype="application/x-www-form-urlencoded">
             <div class="group-form">
               <div class="first">
                 <label for="firstName"> First Name* </label>
-                <input type="text" id="firstName" name="firstName" placeholder="First Name" />
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
               </div>
               <div class="second">
                 <label for="Surname"> Surname* </label>
@@ -190,21 +191,20 @@
             <div class="group-form">
               <div class="first">
                 <label for="telePhone"> Telephone* </label>
-                <input type="number" id="telePhone" name="telePhone" placeholder="Telephone" />
+                <input type="text" id="telePhone" name="telePhone" maxlength="15" placeholder="Telephone" required />
               </div>
               <div class="second">
-                <label for="movingWhen"> Moving When?* </label>
-                <input placeholder="Select Date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
-                  id="movingWhen" />
+                <label for="movingDate"> Moving When?* </label>
+                <input placeholder="Select Date" type="text" id="movingDate" name="movingDate" onfocus="(this.type='date')" onblur="(this.type='text')" required />
               </div>
             </div>
             <div class="group-form d-flex justify-content-between flex-column">
               <div class="first">
                 <label for="email"> Email* </label>
-                <input type="email" id="email" name="email" placeholder="Email" />
+                <input type="email" id="email" name="email" placeholder="Email" required />
               </div>
               <div class="second">
-                <button class="btn" type="button">Let's Continue</button>
+                <button class="btn" type="submit">Let's Continue</button>
               </div>
             </div>
           </form>
