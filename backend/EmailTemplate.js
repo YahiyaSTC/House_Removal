@@ -14,13 +14,13 @@ const QuoteMsg = (firstName, SurName, yourEmail, phoneNumber, movingDate, BaseUR
                           <tr>
                             <td align="center" width="600" style="width: 600px;padding-bottom: 2px">
                               <div style="background-color: #000000; padding: 1rem 0;">
-                                <img src='${BaseURL}assets/Images/logo.png' width="150" height="50"
-                                  style="padding: 0" />
+                                <img src='${BaseURL}assets/Images/logo.png' width="150" height="100"
+                                  style="padding: 0; height: 100px />
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td align="center" width="600" height="1" style="width: 600px;padding: 0"> <br />
+                            <td align="center" width="600" height="100" style="width: 600px;padding: 0"> <br />
                               <img src="${BaseURL}assets/Images/logo.png" width="500" height="1"
                                 style="padding: 0;" />
                             </td>
@@ -169,7 +169,7 @@ const ContactMsg = (firstName, lastName, yourEmail, phoneNumber, yourMessage, Ba
                           <tr>
                             <td align="center" width="600" style="width: 600px;padding-bottom: 2px">
                               <div style="background-color: #000000; padding: 1rem 0;">
-                                <img src='${BaseURL}assets/Images/logo.png' width="150" height="50"
+                                <img src='${BaseURL}assets/Images/logo.png' width="150" height="100"
                                   style="padding: 0" />
                               </div>
                             </td>
@@ -284,15 +284,6 @@ const ContactMsg = (firstName, lastName, yourEmail, phoneNumber, yourMessage, Ba
       </table>
     `;
     } catch (err) { }
-    // return (
-    //     `<ul style="list-style-type:none">
-    //         <li><span> <b>First Name</b>: </span><span>${firstName}</span></li>
-    //         <li><span><b>Last Name</b>: </span><span>${lastName}</span></li>
-    //         <li><span><b>Email</b>: </span><span>${yourEmail}</span></li>
-    //         <li><span><b>Number</b>: </span><span>${phoneNumber}</span></li>
-    //         <li><span><b>Message</b>: </span><span>${movingDate}</span></li>
-    //     </ul>`
-    // )
 }
 
 module.exports = { QuoteMsg, ContactMsg }
