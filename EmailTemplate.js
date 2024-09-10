@@ -15,7 +15,7 @@ const QuoteMsg = (firstName, SurName, yourEmail, phoneNumber, movingDate, BaseUR
                             <td align="center" width="600" style="width: 600px;padding-bottom: 2px">
                               <div style="background-color: #000000; padding: 1rem 0;">
                                 <img src='${BaseURL}assets/Images/logo.png' width="150" height="100"
-                                  style="padding: 0; height: 100px />
+                                  style="padding: 0" />
                               </div>
                             </td>
                           </tr>
