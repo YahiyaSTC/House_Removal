@@ -407,7 +407,7 @@
   font-size: 2.3rem;
 }
 
-.chooseUs .chooseUsBtn>button {
+.chooseUs .chooseUsBtn> a {
   width: 150px;
   border: none;
   margin-top: 10px;
@@ -416,12 +416,12 @@
   background-color: #182937;
 }
 
-.chooseUs .chooseUsBtn>button:hover {
+.chooseUs .chooseUsBtn> a:hover {
   background-color: #0e98bd;
   transition: all 0.4s ease;
 }
 
-.chooseUs .chooseUsBtn>button:nth-child(1) {
+.chooseUs .chooseUsBtn> a:nth-child(1) {
   margin-right: 5px;
 }
 
