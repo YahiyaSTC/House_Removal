@@ -3,15 +3,17 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const nodemailer = require("nodemailer")
+const nodemailer = require("nodemailer");
+const { ContactMsg, QuoteMsg } = require("./EmailTemplate");
 
 const port = process.env.PORT;
+const BaseURL = process.env.BaseURL;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
-console.log = () => {};
+// console.log = () => { };
 
 app.post("/contact", async (req, res) => {
   data = req.body;
@@ -22,12 +24,8 @@ app.post("/contact", async (req, res) => {
   let yourEmail = data.your_email;
   let yourMessage = data.your_message;
 
-  console.log( firstName, lastName, phoneNumber, yourEmail, yourMessage);
-
-   let transporter = nodemailer.createTransport({
+  let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
-    // host: "smtp.houseRemoval.com",
-    // host: "mail.privateemail.com", 
     port: 465,
     secure: true,
     service: "gmail",
@@ -38,26 +36,27 @@ app.post("/contact", async (req, res) => {
   });
 
   var message = {
-    from: yourEmail,
+    from: `Quick Trip Removals ${yourEmail}`,
     to: process.env.UserEmail,
     replyTo: yourEmail,
     subject: "New Contact Message",
     text: yourMessage,
-    html: `<ul style="list-style-type:none">
-        <li><span> <b>First Name</b>: </span><span>${firstName}</span></li>
-        <li><span><b>Last Name</b>: </span><span>${lastName}</span></li>
-        <li><span><b>Email</b>: </span><span>${yourEmail}</span></li>
-        <li><span><b>Number</b>: </span><span>${phoneNumber}</span></li>
-        <li><span><b>Message</b>: </span><span>${yourMessage}</span></li>
-        </ul>`,
+    html: ContactMsg(
+      firstName,
+      lastName,
+      yourEmail,
+      phoneNumber,
+      yourMessage,
+      BaseURL
+    ),
   };
 
   transporter.sendMail(message, (err, info) => {
     if (err) {
-      return res.send(`<p>error in sending mail please try again later </p> <a href='http://127.0.0.1:5500/frontend/'>Go To Home</a>`);
+      return res.send(`<p>error in sending mail please try again later </p> <a href=${BaseURL}>Go To Home</a>`);
     } else {
       // console.log("successfully send the Mail", info);
-      return res.send("<p>successfully send the Mail</p> <a href='http://127.0.0.1:5500/frontend/'>Go To Home</a>");
+      return res.send(`<p>successfully send the Mail</p> <a href=${BaseURL}>Go To Home</a>`);
     }
   });
 });
@@ -71,12 +70,8 @@ app.post("/quote", async (req, res) => {
   let yourEmail = data.email;
   let movingDate = data.movingDate;
 
-  console.log( firstName, SurName, phoneNumber, yourEmail);
-
-   let transporter = nodemailer.createTransport({
+  let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
-    // host: "smtp.houseRemoval.com",
-    // host: "mail.privateemail.com", 
     port: 465,
     secure: true,
     service: "gmail",
@@ -87,25 +82,28 @@ app.post("/quote", async (req, res) => {
   });
 
   var message = {
-    from: yourEmail,
+    from: `Quick Trip Removals ${yourEmail}`,
     to: process.env.UserEmail,
     replyTo: yourEmail,
     subject: "New Quote Message",
-    html: `<ul style="list-style-type:none">
-        <li><span> <b>First Name</b>: </span><span>${firstName}</span></li>
-        <li><span><b>Sur Name</b>: </span><span>${SurName}</span></li>
-        <li><span><b>Email</b>: </span><span>${yourEmail}</span></li>
-        <li><span><b>Number</b>: </span><span>${phoneNumber}</span></li>
-        <li><span><b>When Moving Date</b>: </span><span>${movingDate}</span></li>
-        </ul>`,
+    html: QuoteMsg(
+      firstName,
+      SurName,
+      yourEmail,
+      phoneNumber,
+      movingDate,
+      BaseURL
+    ),
   };
 
   transporter.sendMail(message, (err, info) => {
     if (err) {
-      return res.send(`<p>error in sending mail please try again later </p> <a href='http://127.0.0.1:5500/frontend/'>Go To Home</a>`);
+      console.log(err,BaseURL);
+      
+      return res.send(`<p>error in sending mail please try again later </p> <a href=${BaseURL}>Go To Home</a>`);
     } else {
       // console.log("successfully send the Mail", info);
-      return res.send("<p>successfully send the Mail</p> <a href='http://127.0.0.1:5500/frontend/'>Go To Home</a>");
+      return res.send(`<p>successfully send the Mail</p> <a href=${BaseURL}>Go To Home</a>`);
     }
   });
 });
