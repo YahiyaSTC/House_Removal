@@ -16,7 +16,7 @@ app.use(cors());
 // console.log = () => { };
 
 app.get("/", async (req, res) => {
-  req.send("live...")
+  res.send("live...")
 })
 
 app.post("/contact", async (req, res) => {
@@ -112,4 +112,5 @@ app.post("/quote", async (req, res) => {
   });
 });
 
-app.listen(port, () => console.log("server is runnning: " + port));
+// app.listen(port, () => console.log("server is runnning: " + port));
+app.listen();
