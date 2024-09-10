@@ -15,6 +15,10 @@ app.use(cors());
 
 // console.log = () => { };
 
+app.get("/", async (req, res) => {
+  req.send("live...")
+})
+
 app.post("/contact", async (req, res) => {
   data = req.body;
 
